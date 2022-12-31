@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <style>
+
+            .cen
+            {
+
+                font-size: 30px;
+                background-color: #03989E;
+                color: #ffffff;
+            }
+
+        </style>
+        <title>The Moody Web</title>
+    </head>
+    <body style ='text-align: center; background-color: #A8A288;' >
+        <h1 style= "font-size: 75px;">The Moody Web</h1>
+        <p style= "font-size: 50px;">Hey there, Moody! How's your mood today?</p>
+        <button id="elated" class="cen">ELATED</button>
+        <button id="happy" class="cen">HAPPY</button>
+        <button id="so-so" class="cen">SO-SO</button>
+        <button id="distressed" class="cen">DISTRESSED</button>
+        <button id="angry" class="cen">ANGRY</button>
+        <button id="guilty" class="cen">GUILTY</button>
+        <button id="compassionate" class="cen">COMPASSIONATE</button>
+        <script>
+
+            let body = document.querySelector('body');
+            document.querySelector('#elated').onclick = function() {
+                document.body.style.backgroundImage = "url('images/elated.png')";
+            };
+            document.querySelector('#happy').onclick = function() {
+                document.body.style.backgroundImage = "url('images/happy.png')";
+            };
+            document.querySelector('#so-so').onclick = function() {
+                document.body.style.backgroundImage = "url('images/so-so.png')";
+            };
+            document.querySelector('#distressed').onclick = function() {
+                document.body.style.backgroundImage = "url('images/distressed.png')";
+            };
+            document.querySelector('#angry').onclick = function() {
+                document.body.style.backgroundImage = "url('images/angry.png')";
+            };
+            document.querySelector('#guilty').onclick = function() {
+                document.body.style.backgroundImage = "url('images/guilty.png')";
+            };
+            document.querySelector('#compassionate').onclick = function() {
+               document.body.style.backgroundImage = "url('images/compassionate.png')";
+            };
+
+
+        </script>
+    </body>
+</html>
